@@ -1,33 +1,97 @@
-.App {
-  text-align: center;
-}
+@import "https://fonts.googleapis.com/css?family=Open+Sans&display=swap";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css";
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+.container {
+  width: 40vw;
+  margin: auto;
+  margin-top: 3em;
+  border: thin grey solid;
+  border-radius: .2em; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  background-image: linear-gradient(#01087C, #505AFC);
+  padding: 1em;
   color: white;
-}
+  font-family: "Open Sans"; }
 
-.App-link {
-  color: #61dafb;
-}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: grey; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.title {
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-transform: uppercase; }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: .8em;
+  color: grey; }
+
+main {
+  padding: 1em;
+  font-family: "Open Sans"; }
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  border-bottom: thin grey solid; }
+
+i {
+  color: grey; }
+
+.itemtext {
+  text-transform: capitalize;
+  padding: .5em 0; }
+
+.item:hover {
+  background-color: #4048C9;
+  color: white;
+  border-radius: .2em; }
+
+i:hover {
+  color: white; }
+
+.priority {
+  font-size: .6em;
+  color: coral;
+  font-style: italic; }
+
+input {
+  margin-left: .2em;
+  border: thin grey solid;
+  padding: .5em;
+  color: grey;
+  width: 8em; }
+
+button {
+  background-color: #4048C9;
+  width: 10em;
+  padding: .5em;
+  color: white;
+  border-radius: .2em;
+  font-size: .8em;
+  text-align: center;
+  margin-top: .5em;
+  align-self: auto; }
+
+.add-item {
+  display: flex;
+  justify-content: space-between; }
+
+label {
+  font-size: .8em; }
+
+form {
+  text-align: center; }
+
+/*# sourceMappingURL=maincss.css.map */
