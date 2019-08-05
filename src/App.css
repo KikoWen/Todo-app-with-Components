@@ -14,7 +14,7 @@
   border-radius: .2em; }
 
 header {
-  background-image: linear-gradient(#01087C, #505AFC);
+  background-image: linear-gradient(#BF214B, #F26D85);
   padding: 1em;
   color: white;
   font-family: "Open Sans"; }
@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: .8em;
-  color: grey; }
+  color: black; }
 
 main {
   padding: 1em;
@@ -47,14 +47,14 @@ main {
   border-bottom: thin grey solid; }
 
 i {
-  color: grey; }
+  color: black; }
 
 .itemtext {
   text-transform: capitalize;
   padding: .5em 0; }
 
 .item:hover {
-  background-color: #4048C9;
+  background-color: #F26D85;
   color: white;
   border-radius: .2em; }
 
@@ -63,7 +63,7 @@ i:hover {
 
 .priority {
   font-size: .6em;
-  color: coral;
+  color: purple;
   font-style: italic; }
 
 input {
@@ -74,7 +74,7 @@ input {
   width: 8em; }
 
 button {
-  background-color: #4048C9;
+  background-color:  #F26D85;
   width: 10em;
   padding: .5em;
   color: white;
