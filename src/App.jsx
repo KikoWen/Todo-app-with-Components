@@ -53,7 +53,27 @@ class App extends Component{
     })
   }
 
-  updateToshop =(id,data)=>{}
+  updateToshop =(id,data)=>{
+    var toshops = this.state.toshops;
+
+    var index = toshops.findIndex(function(toshop){
+      return toshop.id === id;
+    });
+
+    var updatedToshop = {
+      ...toshops[index],
+      ...data
+    };
+
+    toshops[index] = updatedToshop;
+
+    this.setState({toshops});
+
+    
+
+
+
+  }
 
   render(){
     return(
@@ -77,7 +97,8 @@ class App extends Component{
               var toshopProps = {
                 ...toshop,
                 key:toshop.id,
-                removeToshop:this.removeToshop
+                removeToshop:this.removeToshop,
+                updateToshop: this.updateToshop
               };
               return(
                 <Toshop {...toshopProps}/>
